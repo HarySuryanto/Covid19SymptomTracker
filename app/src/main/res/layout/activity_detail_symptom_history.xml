@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/themeBackground"
+    tools:context=".DetailSymptomHistoryActivity">
+
+    <!-- Body -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="36dp"
+        android:paddingBottom="36dp"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginBottom="36dp"
+            android:transitionName="ivSymptomCheck"
+            android:src="@drawable/ic_conditions" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/graphiksemibold"
+                android:text="Gejala"
+                android:textColor="@color/themeText1"
+                android:textSize="36sp" />
+
+        </LinearLayout>
+
+        <!-- Datetime -->
+        <TextView
+            android:id="@+id/tvDatetime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="2020/06/11 22:10:00" />
+
+        <!-- Demam -->
+        <LinearLayout
+            android:id="@+id/llQuestion1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:padding="16dp"
+            android:background="#ffff"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/graphikregular"
+                android:text="Pertanyaan #1"
+                android:textColor="@color/themeText1"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineHeight="36sp"
+                android:textSize="24sp"
+                android:text="Apakah Anda demam? Suhu tubuh Anda mencapai 38 derajat celsius?" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@color/themeAccent1"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tvDemam"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/graphikmedium"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:textColor="#ffffff"
+                    android:text="YA" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!-- Batuk Kering -->
+        <LinearLayout
+            android:id="@+id/llQuestion2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:padding="16dp"
+            android:background="#ffff"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/graphikregular"
+                android:text="Pertanyaan #2"
+                android:textColor="@color/themeText1"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineHeight="36sp"
+                android:textSize="24sp"
+                android:text="Apakah Anda mengalami batuk kering?" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@color/themeAccent1"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tvBatukKering"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/graphikmedium"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:textColor="#ffffff"
+                    android:text="TIDAK" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Sesak Napas -->
+        <LinearLayout
+            android:id="@+id/llQuestion3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:padding="16dp"
+            android:background="#ffff"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/graphikregular"
+                android:text="Pertanyaan #3"
+                android:textColor="@color/themeText1"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineHeight="36sp"
+                android:textSize="24sp"
+                android:text="Apakah Anda mengalami sesak napas?" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@color/themeAccent1"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tvSesakNapas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/graphikmedium"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:textColor="#ffffff"
+                    android:text="YA" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Hasil -->
+
+        <!-- Sesak Napas -->
+        <LinearLayout
+            android:id="@+id/llQuestion4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:padding="16dp"
+            android:background="#ffff"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineHeight="36sp"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:text="HASIL" />
+
+            <TextView
+                android:id="@+id/tvResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:padding="16dp"
+                android:fontFamily="@font/graphikmedium"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:text="10%" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/themeBackground"
+    tools:context=".InformationVirusSpreadActivity">
+
+    <!-- Body -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="36dp"
+        android:paddingBottom="36dp"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginBottom="36dp"
+            android:transitionName="ivVirusSpread"
+            android:src="@drawable/ic_coronavirus_spread" />
+
+        <!-- Cek gejala -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/graphiksemibold"
+                android:text="Cara COVID-19 Menyebar"
+                android:textColor="@color/themeText1"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:lineHeight="20sp"
+            android:text="COVID-19 dapat menyebar terutama dari orang ke orang melalui percikan-percikan dari hidung atau mulut yang keluar saat orang yang terinfeksi COVID-19 batuk, bersin atau berbicara. Orang dapat terinfeksi COVID-19 jika menghirup percikan orang yang terinfeksi virus ini. Oleh karena itu, penting bagi kita untuk menjaga jarak minimal 1 meter dari orang lain. Percikan-percikan ini dapat menempel di benda dan permukaan lainnya di sekitar orang seperti meja, gagang pintu, dan pegangan tangan. Orang dapat terinfeksi dengan menyentuh benda atau permukaan tersebut, kemudian menyentuh mata, hidung, atau mulut mereka." />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineHeight="20sp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/graphiksemibold"
+            android:text="Apakah COVID-19 dapat menular dari orang yang tidak menunjukkan gejala?" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineHeight="20sp"
+            android:text="Banyak orang yang terinfeksi COVID-19 hanya mengalami gejala ringan terutama pada tahap-tahap awal. Karena itu, COVID-19 dapat menular dari orang yang hanya bergejala ringan, seperti batuk ringan, tetapi merasa sehat. Beberapa laporan menunjukkan bahwa orang tanpa gejala dapat menularkan virus ini namun belum diketahui seberapa sering penularan dengan cara tersebut terjadi." />
+
+    </LinearLayout>
+
+</ScrollView>

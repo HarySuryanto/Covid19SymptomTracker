@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/themeBackground"
+    tools:context=".SymptomHistoryEditActivity">
+
+    <!-- Body -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="36dp"
+        android:paddingBottom="36dp"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginBottom="36dp"
+            android:transitionName="ivSymptomCheck"
+            android:src="@drawable/ic_doctor" />
+
+        <!-- Title -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/graphikregular"
+                android:text="Ubah Gejala"
+                android:textColor="@color/themeText1"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/ivSymptomHistory"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:scaleType="fitEnd"
+                android:src="@drawable/ic_baseline_history_24" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/graphiksemibold"
+                android:text="Pertanyaan"
+                android:textColor="@color/themeText1"
+                android:textSize="36sp" />
+
+        </LinearLayout>
+
+        <!-- Demam -->
+        <LinearLayout
+            android:id="@+id/llQuestion1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:padding="16dp"
+            android:background="#ffff"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/graphikregular"
+                android:text="Pertanyaan #1"
+                android:textColor="@color/themeText1"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineHeight="36sp"
+                android:textSize="24sp"
+                android:text="Apakah Anda demam? Suhu tubuh Anda mencapai 38 derajat celsius?" />
+
+            <RadioGroup
+                android:id="@+id/rgDemam"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:orientation="horizontal">
+
+                <RadioButton android:id="@+id/rbDemamTrue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
+                    android:padding="16dp"
+                    android:background="@color/themeAccent1"
+                    android:fontFamily="@font/graphikmedium"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:textColor="#ffffff"
+                    android:text="YA"
+                    android:onClick="setDemam" />
+
+                <RadioButton android:id="@+id/rbDemamFalse"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:padding="16dp"
+                    android:background="@color/themeAccent1"
+                    android:fontFamily="@font/graphikmedium"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:textColor="#ffffff"
+                    android:text="TIDAK"
+                    android:onClick="setDemam" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+        <!-- Batuk Kering -->
+        <LinearLayout
+            android:id="@+id/llQuestion2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:padding="16dp"
+            android:background="#ffff"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/graphikregular"
+                android:text="Pertanyaan #2"
+                android:textColor="@color/themeText1"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineHeight="36sp"
+                android:textSize="24sp"
+                android:text="Apakah Anda mengalami batuk kering?" />
+
+            <RadioGroup
+                android:id="@+id/rgBatukKering"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbBatukKeringTrue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
+                    android:padding="16dp"
+                    android:background="@color/themeAccent1"
+                    android:fontFamily="@font/graphikmedium"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:textColor="#ffffff"
+                    android:text="YA"
+                    android:onClick="setBatukKering" />
+
+                <RadioButton
+                    android:id="@+id/rbBatukKeringFalse"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:padding="16dp"
+                    android:background="@color/themeAccent1"
+                    android:fontFamily="@font/graphikmedium"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:textColor="#ffffff"
+                    android:text="TIDAK"
+                    android:onClick="setBatukKering" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <!-- Sesak Napas -->
+        <LinearLayout
+            android:id="@+id/llQuestion3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:padding="16dp"
+            android:background="#ffff"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/graphikregular"
+                android:text="Pertanyaan #3"
+                android:textColor="@color/themeText1"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineHeight="36sp"
+                android:textSize="24sp"
+                android:text="Apakah Anda mengalami sesak napas?" />
+
+            <RadioGroup
+                android:id="@+id/rgSesakNapas"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:orientation="horizontal">
+
+                <RadioButton android:id="@+id/rbSesakNapasTrue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
+                    android:padding="16dp"
+                    android:background="@color/themeAccent1"
+                    android:fontFamily="@font/graphikmedium"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:textColor="#ffffff"
+                    android:text="YA"
+                    android:onClick="setSesakNapas" />
+
+                <RadioButton android:id="@+id/rbSesakNapasFalse"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:padding="16dp"
+                    android:background="@color/themeAccent1"
+                    android:textAlignment="center"
+                    android:textSize="24sp"
+                    android:textColor="#ffffff"
+                    android:text="TIDAK"
+                    android:onClick="setSesakNapas" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+        <!-- Hasil -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:visibility="gone"
+            app:cardCornerRadius="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/graphikmedium"
+                    android:text="HASIL"
+                    android:textColor="@color/themeText1"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/tvResult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/graphiksemibold"
+                    android:text="50%"
+                    android:textColor="@color/themeText1"
+                    android:textSize="36sp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btnResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lihat Hasil" />
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="Simpan perubahan" />
+
+    </LinearLayout>
+
+</ScrollView>

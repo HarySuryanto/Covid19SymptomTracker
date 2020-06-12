@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/themeBackground"
+    tools:context=".InformationVirusPreventionActivity">
+
+    <!-- Body -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="36dp"
+        android:paddingBottom="36dp"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginBottom="36dp"
+            android:transitionName="ivVirusPrevention"
+            android:src="@drawable/ic_coronavirus_protection" />
+
+        <!-- Cek gejala -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/graphiksemibold"
+                android:text="Panduan Menjaga Kesehatan Agar Terhindar Dari Covid-19"
+                android:textColor="@color/themeText1"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:lineHeight="20sp"
+            android:text="Infeksi virus corona memang menelan korban jiwa di beberapa negara di dunia, tetapi tidak sedikit pula pasien yang dinyatakan sembuh. Virus corona bisa menular dari hewan ke manusia atau dari manusia ke manusia. Gejala klinis yang muncul sebagai tanda infeksi virus tersebut, di antaranya batuk, pilek, nyeri tenggorokan, nyeri otot, hingga sakit kepala." />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:lineHeight="20sp"
+            android:text="Disarankan untuk segera melakukan pemeriksaan ke rumah sakit saat gejala muncul, terutama jika memiliki riwayat bepergian ke luar negeri atau kontak langsung dengan orang yang positif terinfeksi corona. Mencegah penularan dan infeksi virus corona bisa dilakukan dari diri sendiri. Organisasi kesehatan dunia (WHO) merilis panduan sederhana untuk mencegah penularan COVID-19." />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineHeight="20sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/graphiksemibold"
+            android:text="Tips-tips" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineHeight="20sp"
+            android:text="Ada tips dan panduan dari WHO yang bisa diterapkan untuk melindungi diri dan mencegah penularan virus corona, di antaranya:" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="36dp"
+            android:paddingStart="16dp"
+            android:lineHeight="20sp"
+            android:text="• Rajin mencuci tangan\n• Menjaga jarak\n• Jangan menyentuh wajah\n• Periksa ke dokter ketika muncul gejala\n• Ikut perkembangan berita" />
+
+    </LinearLayout>
+
+</ScrollView>

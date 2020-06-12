@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="id.awesometeam.covid_19symptomtracker">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_virus"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_virus"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SymptomHistoryEditActivity"></activity>
+        <activity android:name=".DeveloperHaryActivity" />
+        <activity android:name=".DeveloperFandiActivity" />
+        <activity android:name=".DeveloperBayuActivity" />
+        <activity android:name=".DeveloperAzyActivity" />
+        <activity android:name=".DeveloperAgryActivity" />
+        <activity android:name=".DeveloperListActivity" />
+        <activity android:name=".OnboardingActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".InformationVirusPreventionActivity" />
+        <activity android:name=".InformationVirusSpreadActivity" />
+        <activity android:name=".InformationSymptomActivity" />
+        <activity android:name=".DetailSymptomHistoryActivity" />
+        <activity android:name=".SymptomHistoryActivity" />
+        <activity android:name=".SymptomCheckActivity" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>
