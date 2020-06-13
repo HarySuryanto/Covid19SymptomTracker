@@ -1,14 +1,14 @@
 # Covid-19 Symptom Tracker 🦠
 
-# File APK
+## File APK
 [Download file apk](https://github.com/HarySuryanto/Covid19SymptomTracker/raw/master/app/build/outputs/apk/debug/Covid-19%20Symptom%20Tracker.apk)
 
-# PERHATIAN
+## PERHATIAN
 Versi Android harus minimal versi Android 8.0 Oreo untuk menjalankan aplikasi ini.
 
 ## Screenshots
 ### Onboarding
-![Onboarding](https://i.ibb.co/3MmqzGD/home.jpg)
+![Onboarding](https://i.ibb.co/THPMMxq/onboarding.jpg)
 
 ### Home
 ![Home](https://i.ibb.co/s69GHk0/home.jpg)
