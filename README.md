@@ -6,6 +6,9 @@
 ## PERHATIAN
 Versi Android harus minimal versi Android 8.0 Oreo untuk menjalankan aplikasi ini.
 
+## Video Demo
+[![](http://img.youtube.com/vi/2b3tBoRUKHo/0.jpg)](http://www.youtube.com/watch?v=2b3tBoRUKHo "Covid-19 Symptom Tracker")
+
 ## Screenshots
 ### Onboarding
 ![Onboarding](https://i.ibb.co/THPMMxq/onboarding.jpg)
